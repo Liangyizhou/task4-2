@@ -12,14 +12,7 @@ int main()
 	cv::Mat labels;
 	cv::Mat stats;
 	cv::Mat centroids;
-	
 
-	int font_face = cv::FONT_HERSHEY_COMPLEX;
-	double font_scale = 1.5;
-	int thickness = 1;
-	int baseline;
-
-	int elementSize = 5;
 	//二值化
 	cv::threshold(srcMat, binaryMat, 0, 255, THRESH_OTSU);
 	//创建结构元素
